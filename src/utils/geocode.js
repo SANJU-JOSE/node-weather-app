@@ -1,7 +1,8 @@
 const request = require('request');
+require('dotenv').config();
 
 const geoCode = (address, callback) => {
-  const urlG = `https://api.maptiler.com/geocoding/${address}.json?key=gahUQ6NdFu9nRErQiRkn`;
+  const urlG = `https://api.maptiler.com/geocoding/${address}.json?key=${process.env.GEOCODE_API_KEY}`;
 
   request({ url: urlG, json: true }, (error, response) => {
     if (error) {
