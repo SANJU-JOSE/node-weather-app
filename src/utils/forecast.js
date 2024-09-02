@@ -15,7 +15,7 @@ const forecast = (lat, long, callback) => {
     } else {
       callback(
         undefined,
-        ` It is ${response.body.current.weather_descriptions[0]} the temperature outside is ${response.body.current.temperature} but it feels like ${response.body.current.feelslike} `
+        ` It is ${response.body.current.weather_descriptions[0]} the temperature outside is ${response.body.current.temperature}oC but it feels like ${response.body.current.feelslike} oC. The humidity is ${response.body.current.humidity} `
       );
     }
   });
