@@ -19,10 +19,12 @@ npm install
 ```
 - Build and run the project
 ```
-npm start
+npm run start
 ```
   Navigate to `http://localhost:3000`
 
   
 # development
-$ npm run dev
+```
+npm run dev
+```
